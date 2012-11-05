@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-responsive.css">
+  <script type="text/javascript" src="vendor/require.js" data-main="app/main"></script>
+</head>
+<body>
+<div id="application" data-bind="template: 'AppView'">
+  <p class="loading">Loading</p>
+</div>
+<script type="text/html" id="one">
+<h2>One</h2>
+</script>
+<script type="text/html" id="two">
+<h2>Two</h2>
+</script>
+<script type="text/html" id="AppView">
+  <h1 data-bind="text: title"></h1>
+  <div data-bind="template: currentPage">
+
+  </div>
+</script>
+</body>
+</html>
