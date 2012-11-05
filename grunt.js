@@ -17,6 +17,7 @@ module.exports = function(grunt) {
 
   // Project configuration.
   grunt.initConfig({
+
     lint: {
       all: [
         'grunt.js',
@@ -24,12 +25,14 @@ module.exports = function(grunt) {
         'test/spec/**/*.js'
       ]
     },
+
     watch: {
       scripts: {
         files: '<config:lint.all>',
         tasks: 'lint test'
       }
     },
+
     jshint: {
       options: {
         curly: true,
@@ -47,9 +50,11 @@ module.exports = function(grunt) {
         strict: false
       }
     },
+
     mocha: {
       index: [ 'test/runner.html' ]
     },
+
     requirejs: {
       compile: {
         options: {
